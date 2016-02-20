@@ -21,7 +21,6 @@ body {
 	height:100vh;
 	z-index: 20;
 	background-color: #eee;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/mountains.jpg");
 }
 
 nav{
@@ -70,14 +69,17 @@ a.nav_btn:hover, a.nav_btn:active {
 .quote {
 	position: relative;
 	text-align: center;
-	top: 40%;
-	left: 25%;
-	width: 50%;
 	z-index: 30;
+	max-width: 1140px;
+	height:100vh;
 	background-color: rgba(0,0,0,0);
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/mountains.jpg");
 }
 
 .quote-text {
+	padding-top: 30%;
+	margin-left: 25%;
+	width: 50%;
 	font-size: 300%;
 	color: #fff;
 	background-color: inherit;
@@ -87,9 +89,11 @@ a.nav_btn:hover, a.nav_btn:active {
 .author {
 	background-color: rgba(0,0,0,0);
 	color: #fff;
+	min-width: 20%;
 	padding-top: 25px;
-	padding-left: 150px;
-	text-align: right;
+	padding-left: 55%;
+	padding-right: 25%;
+	text-align: center;
 }
 
 footer {
@@ -100,6 +104,7 @@ footer {
 	text-align: center;
 	font-size: 75%;
 	color: #333;
+	z-index: 100;
 }
 
 footer>p {
