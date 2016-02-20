@@ -8,10 +8,13 @@
 	text-rendering: optimizeLegibility;
 }
 
+html {
+	min-height: 100vh;
+}
+
 body {
 	min-height: 100vh;
 	background-color: #1866a8;
-	position: fixed;
 	width: 100vw;
 }
 
@@ -32,7 +35,7 @@ p {
 	position: relative;
 	margin: 0 auto;
 	max-width: 1140px;
-	min-height:100vh;
+	min-height: 100vh;
 	z-index: 20;
 	background-color: #eee;
 }
@@ -43,7 +46,7 @@ p {
 	z-index: 21;
 	background-color: inherit;
 	max-width: 90%;
-	max-height: 100%;
+	height: 100%;
 }
 
 h1 {
@@ -106,9 +109,10 @@ a.nav_btn:hover, a.nav_btn:active {
 /*==================	FOOTER    ===================*/
 
 footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
+	margin-top: 25px;
 	width: 100%;
 	text-align: center;
 	font-size: 75%;
@@ -120,12 +124,27 @@ footer>p {
 	color: #000;
 }
 
+.home-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 75%;
+	color: #333;
+	z-index: 100;
+}
+
+.home-footer>p {
+	color: #000;
+}
+
 /*============================================================*/
 /*	HOME PAGE*/
 /*============================================================*/
 
 .quote {
-	position: relative;
+	position: fixed;
 	text-align: center;
 	z-index: 30;
 	max-width: 1140px;
@@ -167,6 +186,7 @@ footer>p {
     border-radius: 25px;
     float: left;
     margin-top: -25px;
+    margin-bottom: 30px;
 }
 
 .about-text {
