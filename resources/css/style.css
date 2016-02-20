@@ -1,10 +1,11 @@
 * {
-	background-color: #fff;
+	background-color: #eee;
 	box-sizing: border-box;
 	font-weight: 300;
 	font-family: 'Open Sans', Arial, sans-serif;
 	margin: 0px;
 	padding: 0px;
+	text-rendering: optimizeLegibility;
 }
 
 body {
@@ -14,7 +15,16 @@ body {
 	width: 100vw;
 }
 
-.container{
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+/*============================================================*/
+/*	REUSABLE ELEMENTS*/
+/*============================================================*/
+
+.container {
 	position: relative;
 	margin: 0 auto;
 	max-width: 1140px;
@@ -23,7 +33,25 @@ body {
 	background-color: #eee;
 }
 
-nav{
+.page {
+	position: relative;
+	margin: 0 auto;
+	z-index: 21;
+	background-color: inherit;
+	max-width: 90%;
+}
+
+h1 {
+	position: relative;
+	text-align: right;
+	float: right;
+	font-weight: 400;
+	color: #3392e2;
+}
+
+/*==================	NAVIGATION BAR    ===================*/
+
+nav {
 	position: relative;
 	background-color: #fff;
 	width: 100%;
@@ -31,6 +59,9 @@ nav{
 	padding-right: 20px;
 	padding-bottom: 20px;
 	text-align: right;
+	-moz-box-shadow: 0px 2px 2px #909090;
+	-webkit-box-shadow: 0px 2px 2px #909090;
+	box-shadow: 0px 2px 2px #909090;
 }
 
 nav>a {
@@ -66,6 +97,27 @@ a.nav_btn:hover, a.nav_btn:active {
 	font-style: italic;
 }
 
+/*==================	FOOTER    ===================*/
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 75%;
+	color: #333;
+	z-index: 100;
+}
+
+footer>p {
+	color: #000;
+}
+
+/*============================================================*/
+/*	HOME PAGE*/
+/*============================================================*/
+
 .quote {
 	position: relative;
 	text-align: center;
@@ -96,17 +148,16 @@ a.nav_btn:hover, a.nav_btn:active {
 	text-align: center;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 75%;
-	color: #333;
-	z-index: 100;
-}
+/*============================================================*/
+/*	ABOUT PAGE*/
+/*============================================================*/
 
-footer>p {
-	color: #000;
+.about-photo {
+	margin-top: 50px;
+	-webkit-filter: grayscale(10%);
+    filter: grayscale(10%);
+    max-width: 40%;
+    max-height: auto;
+    border-radius: 25px;
+    float: left;
 }
