@@ -2,7 +2,7 @@
 	background-color: #eee;
 	box-sizing: border-box;
 	font-weight: 300;
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	margin: 0px;
 	padding: 0px;
 	text-rendering: optimizeLegibility;
@@ -20,6 +20,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	line-height: 1.5;
+}
+
 /*============================================================*/
 /*	REUSABLE ELEMENTS*/
 /*============================================================*/
@@ -28,7 +32,7 @@ a {
 	position: relative;
 	margin: 0 auto;
 	max-width: 1140px;
-	height:100vh;
+	min-height:100vh;
 	z-index: 20;
 	background-color: #eee;
 }
@@ -39,12 +43,14 @@ a {
 	z-index: 21;
 	background-color: inherit;
 	max-width: 90%;
+	max-height: 100%;
 }
 
 h1 {
 	position: relative;
 	text-align: right;
 	float: right;
+	margin-top: -50px;
 	font-weight: 400;
 	color: #3392e2;
 }
@@ -153,11 +159,27 @@ footer>p {
 /*============================================================*/
 
 .about-photo {
-	margin-top: 50px;
+	margin-right: 5%;
 	-webkit-filter: grayscale(10%);
     filter: grayscale(10%);
     max-width: 40%;
     max-height: auto;
     border-radius: 25px;
     float: left;
+    margin-top: -25px;
+}
+
+.about-text {
+	position: relative;
+	margin-top: 100px;
+	background-color: rgba(0,0,0,0);
+}
+
+.about-text>p {
+	position: relative;
+	background-color: rgba(0,0,0,0);
+}
+
+.about-text+p {
+	margin-top: 50px;
 }
